@@ -1,0 +1,169 @@
+/*commentaire en css*/
+/* les balise inline: <a></a><span></span> ne fait pas un retour a ligne*/
+/* les balise block: <p></p><div></div> fait un retour a la ligne*/
+body{
+	background-color: #F4F7F6;
+}
+header{
+	text-align: center;
+	background-color: #1D1D1D;
+	color: white;
+	padding-bottom: 30px;
+}
+section{
+	text-align: center;
+	margin-top: 50px;
+}
+h1{
+    font-family: 'regular';
+    text-align: center;
+    margin-top: 0;
+    padding-top: 30px;
+}
+.spar{
+	width: 40px;
+	height: 1px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background-color: #999999;
+
+}
+h2{
+	
+	font-size: 1.5em;
+	width: 400px;
+	margin: auto;
+  }	
+h3:before{
+	content: "« ";
+	color: gray;
+}
+
+h3{
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+h3:after{
+	content: " »";
+	color: gray;
+}
+nav{
+	text-align: center;
+	background-color: #FFFFFF;
+	box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
+	font-size: 1.1em;
+	padding: 15px;
+
+}
+li:hover{
+	font-weight: bold;
+}
+footer{
+	background-color: #1D1D1D;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	flex: box
+}
+.contact{
+	border: 1px black solid;
+	border-radius: 15px;
+	padding: 30px;
+	margin-bottom: 50px;
+
+
+}
+
+a{
+	text-decoration: none; /*pour supprimer le underline */
+	color: black;
+}
+ul{
+	padding: 0;/*pour decaler la list au debut de page*/
+	display: inline;
+	
+}
+li{
+	list-style-type: none; /*pour supprimer les points des puces*/
+	display: inline; /*pour que la liste soit horizontalement*/
+	padding: 10px;
+}
+#logo{
+	margin-top: 30px;
+	width: 50px;
+
+}
+.contener{
+	width: 80%;
+	margin: auto;
+
+}
+.images{
+	width: 400px;
+	height: 266px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.projet img{
+	min-width: 400px;
+	height: 266px;
+
+}
+.projet .date-projet{
+	font-size: 0.7em;
+	display: block;
+}
+.projet span{
+	text-transform: uppercase;
+}
+.projet{
+	width: 400px;
+    margin: 30px;
+    display: inline-block;
+    background: white;
+    padding-bottom: 15px;
+    border: 0px black solid;
+	border-radius: 100px;
+	overflow: hidden;/* tout ce qui passe les coins de div sera caché(image)*/
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.projet:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transition: 0.3s;/*le duree de l'ombre */
+}
+#projets{
+	
+	justify-content: space-between;
+
+}
+*{
+	box-sizing: border-box;
+}
+
+.vedeo-projet video, .vedeo-projet audio{
+  width: 80%;
+}
+
+/*Police*/
+@font-face{
+      font-family: 'regular';
+      src: url('../src/regular.ttf') format('truetype');
+  }
+/*media*/
+@media all and (max-width: 1000px){
+	.projet{width: 100%; margin: 15px auto;}
+	.projet img {width: 100%;min-width: auto; height: auto;}
+	.projet .images{width: 100%; height: auto;}
+     header h2{width: 90%;}
+ }
+:root{
+
+	}/*root = racine <=> html quand j'applique le selecteur root c'est exactement comme j'ecrire html{} 
+	ce selecteur est utilise surtout avec les variable*/
+
+/*
+Iphone : 980px
+*/
