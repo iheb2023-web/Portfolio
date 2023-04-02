@@ -68,7 +68,7 @@ footer{
 	padding: 15px;
 	flex: box
 }
-.contact{
+#contact{
 	border: 1px black solid;
 	border-radius: 15px;
 	padding: 30px;
